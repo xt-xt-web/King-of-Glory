@@ -1,0 +1,1569 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1199378 */
+  src: url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.eot');
+  src: url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.woff2') format('woff2'),
+  url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_1199378_11475eia4l6l.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #ccc;
+}
+ul{
+	list-style: none;
+}
+/*顶部logo和文字*/
+.logo-game-charts{
+	width: 100%;
+	height: 40px;	
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.logo-box{
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+.logo{
+	width: 220px;
+	height: 40px;
+	background-image: url("http://ossweb-img.qq.com/images/js/topfiles/ost1410/ost-bg.png");
+	background-position: 0px 204px;
+}
+/*中间广告*/
+.advertising{
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	top: 2px;
+	left: 420px;
+	background-image: url("https://itea-cdn.qq.com/file/o2m/material/20190717/23040.1563345169.e2c2568e3816f22de466b75c2e88b1fb.230x40_3499.jpg");
+}
+/*广告隐藏部分*/
+.advertising-hide-box{
+	width: 970px;
+	height: 190px;
+	background-image: url("https://itea-cdn.qq.com/file/o2m/material/20190717/970185.1563344747.9f07d9745e5b0e2654a4b55d4e1f4dd9.970x185_91168.jpg");
+	position: absolute;
+	left: 204px;
+	top: 44px;
+	display: none;
+	z-index: 10;
+}
+.advertising:hover+.advertising-hide-box{
+	display: block;
+}
+/*后半部分文字（平台和排行榜）*/
+.after-text{
+	width: 300px;
+	height: 40px;
+	/*border: 1px solid blue;*/
+	display: inline-block;
+	margin-left: 1000px;
+	margin-top: 0px;
+}
+.img-text{
+	float: left;
+	font-size: 14px;
+	line-height: 40px;
+}
+.after-text a:hover{
+	color: red;
+}
+.game-box{
+	float: right;
+	line-height: 40px;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+/*隐藏部分*/
+.game-box-hide-box{
+	width: 700px;
+	height: 400px;
+	border: 1px solid #97A1AF;
+	position: absolute;
+	top: 42px;
+	right: -1px;
+	display: none;
+	box-sizing: border-box;
+	padding-top: 10px;
+	background-color: white;
+	z-index: 2;
+}
+/*三角形*/
+.sjx{
+	width: 0;
+	height: 0;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom:10px solid #ccc ;
+	position: absolute;
+	top: -10px;
+	right: -1px;
+}
+.game-box:hover .game-box-hide-box{
+	display: block;
+}
+/*新游*/
+.new-game{
+	width: 233px;
+	height: 400px;
+	border-right: 1px solid #CCCCCC;
+	margin-top: -11px;
+}
+/*热门游戏*/
+.hot-game{
+	width: 233px;
+	height: 400px;
+	margin-left: 233px;
+	margin-top: -400px;
+	border-right: 1px solid #CCCCCC;
+}
+/*新品手游*/
+.mobile-game{
+	width: 233px;
+	height: 400px;
+	margin-left: 466px;
+	margin-top: -400px;
+/*	border: 1px solid #CCCCCC;*/
+}
+.new-game-name{
+	font-size: 12px;
+	height: 30px;
+}
+.new-game-name span{
+	margin-left: 5px;
+}
+.new-game-name a{
+	margin-left: 100px;
+}
+/*游戏排行*/
+.game-ranking{
+	font-size: 12px;
+	color: #717F92;
+}
+.game-ranking-text{
+	margin-left: 5px;
+}
+.game-ranking li{
+	height: 30px;
+	margin-left: 8px;
+}
+.nbakol2-box{
+	height: 30px;
+}
+.nbakol2{
+	height: 82px;
+	width: 194px;
+	border: 1px solid #717F92;
+	margin-top: -15px;
+	display: none;
+}
+
+.nbakol2-box:hover .nbakol2{
+	display: block;
+	
+}
+.nbakol2-box:hover+.asd{
+	margin-top: 65px;
+}
+.new-game-name-a{
+	font-size: 12px;
+	height: 30px;
+}
+.new-game-a{
+	margin-left: 80px;
+}
+.hot-mobile{
+	font-size: 12px;
+	height: 30px;
+	border: 1px solid red;
+	margin-top: 80px;
+}
+.aaa{
+	height: 15px;
+}
+.game-ranking-box-red{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	text-align: center;
+	line-height: 5px;
+	background-color: red;
+	color: white;
+}
+
+/*黑色导航栏部分*/
+.black-nav{
+	width: 100%;
+	height: 105px;
+	background-color:rgba(0,0,0,0.8);
+	position: absolute;
+	z-index: 1;
+}
+.king-of-lory{
+	width: 300px;
+	height: 105px;
+	margin-left: 100px;
+	/*background-color: red;*/
+}
+.king-of-lory-img{
+	margin-top: 23px;
+}
+.middle-black-nav{
+	width: 750px;
+	height: 105px;
+	/*background-color: red;*/
+	margin-top: -105px;
+	margin-left: 400px;
+}
+.middle-black-nav li{
+	width: 107px;
+	height: 105px;
+	/*background-color: blue;*/
+	float: left;
+	text-align: center;
+	/*line-height: 105px;*/
+	font-size: 12px;
+	box-sizing: border-box;
+}
+.middle-black-nav a{
+	display: block;
+	width: 107px;
+	padding: 40px 0 0;
+	color: #CFCCCF;
+	font-size: 18px;
+	/*line-height: 1;*/
+}
+.middle-black-nav em{
+	font-style: normal;
+	color: #CFCCCF;
+}
+.middle-black-nav li:hover{
+	/*background-image: linear-gradient(to top,#EEF0AE,#000);*/
+	background-color: rgba(243,194,88,0.1);
+	border-bottom: 3px solid gold;
+}
+.middle-black-nav li:hover a{
+	color: gold;
+}
+.middle-black-nav li:hover em{
+	color: gold;
+}
+/*黑色导航栏下面的隐藏部分*/
+.black-nav-hide{
+	width: 100%;
+	height: 280px;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.black-nav:hover .black-nav-hide{
+	display: block;
+}
+.version-introduction-box{
+	width: 107px;
+	height: 280px;
+	/*background-color: red;*/
+	margin-left: 506px;
+}
+.version-introduction-box a{
+	display: inline-block;
+	height: 30px;
+	width: 107px;
+	text-align: center;
+	line-height: 30px;
+	/*border: 1px solid blue;*/
+}
+/*n图标*/
+.n{
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -137px -68px;
+	vertical-align: middle;
+}
+/*h图标*/
+.h{
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -161px -68px;
+	vertical-align: middle;
+}
+/*健康系统图标*/
+.j{
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -137px -34px;
+	vertical-align: middle;
+}
+/*<!--内容中心列-->*/
+.two{
+	margin-top: -280px;
+	margin-left: 614px;
+}
+/*<!--赛事中心列-->*/
+.three{
+	margin-top: -280px;
+	margin-left: 722px;
+}
+/*<!--百态王者列-->*/
+.four{
+	margin-top: -280px;
+	margin-left: 830px;
+}
+/*<!--社区互动列-->*/
+.five{
+	margin-top: -280px;
+	margin-left: 938px;
+}
+/*<!--玩家支持列-->*/
+.six{
+	margin-top: -280px;
+	margin-left: 1046px;
+}
+.nurse{
+	font-size: 14px;
+}
+.version-introduction-box a:hover{
+	color: gold;
+	text-decoration: underline;
+}
+/*登陆部分*/
+.landing-box{
+	width: 250px;
+	height: 105px;
+	/*background-color: red;*/
+	position: absolute;
+	top: 0px;
+	left: 1165px;
+	/*text-align: center;*/
+	/*font-size: 14px;*/
+}
+.landing{
+	width: 59px;
+	height: 105px;
+}
+.landing-img{
+	display: inline-block;
+	width: 59px;
+	height: 59px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -183px 2px;
+	margin-top: 30px;
+}
+.landing-text{
+	float: right;
+	width: 191px;
+	height: 109px;
+	margin-top: -66px;
+}
+.landing-text a{
+	color: white;
+}
+.landing-text span{
+	color: #CFCCCF;
+}
+
+/*大图标部分*/
+.big-img{
+	width: 100%;
+	height: 1100px;
+	background-image: url("http://ossweb-img.qq.com/upload/webplat/info/yxzj/20190717/830511120753857.jpg");
+	background-position: -125px 0px ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.blank{
+	width: 800px;
+	height: 400px;
+	background-color: rgba(0,0,0,0);
+	position: relative;
+	top: 120px;
+	
+	/*margin-top: 135px;*/
+	/*border: 1px solid red;*/
+}
+/*王者荣耀展示区*/
+.glory-show{
+	width: 1269px;
+	height: 347px;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 130px;
+	display: flex;
+	margin-left: 58px;
+}
+/*王者展示左边部分*/
+.glory-show-left{
+	width: 605px;
+	height: 347px;
+	/*border: 1px solid red;*/
+}
+.glory-show-left-img-box{
+	width: 605px;
+	height: 297px;
+	/*border: 1px solid red;*/
+	
+}
+.glory-show-left-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/18ef06824615314fc39d635cd1dafce9.jpeg");
+	
+}
+
+.glory-show-left-text{
+	width: 605px;
+	height: 50px;
+	position: relative;
+	/*border: 1px solid blue;*/
+}
+.box{
+	display: inline-block;
+	height: 50px;
+	width: 121px;
+	background-color: #35353D;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	
+}
+.glory-show-left-text a:hover{
+	background-color: #53545B;
+}
+/*探秘真实王者世界*/
+
+.explore-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/18ef06824615314fc39d635cd1dafce9.jpeg");
+	position: absolute;
+	top: -297px;
+	/*display: none;*/
+}
+
+/*世冠点亮吉隆坡塔*/
+
+.world-champion{
+	position: absolute;
+	top: 0px;
+	left: 121px;
+}
+.world-champion-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/1d31c59f2745ef4969cee62ef988aba9.jpeg");
+	position: relative;
+	top: -347px;
+	display: none;
+}
+
+.world-champion-box:hover .world-champion-img{
+	display: block;
+}
+/*.world-champion-box:hover .world-champion{
+	color: gold;
+}*/
+/*双法阵容真滴强*/
+.mage{
+	position: absolute;
+	top: 0px;
+	left: 242px;
+}
+.mage-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/911623a3902f5711a826c63a6d3a8ce9.jpeg");
+	position: absolute;
+	top: -297px;
+	left: 0px;
+	display: none;
+}
+.mage-box:hover .mage-img{
+	display: block;
+}
+/*.mage-box:hover .mage{
+	color: gold;
+}*/
+/*局内反馈就找Ta*/
+.feedback{
+	position: absolute;
+	top: 0px;
+	left: 363px;
+}
+.feedback-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/8896f6bc414a89f78a61cf8ecafec6fb.jpeg");
+	position: absolute;
+	top: -297px;
+	left: 0px;
+	display: none;
+}
+.feedback-box:hover .feedback-img{
+	display: block;
+}
+/*.feedback-box:hover .feedback{
+	color: gold;
+}*/
+/*虎牙大腿杯升级*/
+.huya{
+	position: absolute;
+	top: 0px;
+	left: 484px;
+}
+.huya-img{
+	width: 605px;
+	height: 297px;
+	background-image: url("http://game.gtimg.cn/upload/adw/image/20190725/3d163df10482ff820c4d0163e86f2dfe.jpeg");
+	position: absolute;
+	top: -297px;
+	left: 0px;
+	display: none;
+}
+.huya-box:hover .huya-img{
+	display: block;
+}
+/*.huya-box:hover .huya{
+	color: gold;
+}*/
+/*王者展示中间部分*/
+.glory-show-middle{
+	width: 428px;
+	height: 347px;
+	/*border: 1px solid red;*/
+}
+.glory-show-middle-nav{
+	width: 428px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+}
+/*中间导航部分公用属性*/
+/*导航栏的两个字*/
+.middle-nav{
+	display: inline-block;
+	width: 75px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	box-sizing: border-box;
+	margin-left: 14px;
+}
+.middle-nav:hover{
+	border-bottom: 2px solid gold;
+}
+/*下面显示部分*/
+.bottom-list{
+	width: 428px;
+	height: 287px;
+}
+.bottom-list a:hover{
+	text-decoration: underline;
+}
+/*大标题部分*/
+.bottom-list-top{
+	width: 300px;
+	height: 50px;
+	background-color: #414046;
+	text-align: center;
+	line-height: 50px;
+	margin: 2px auto;
+}
+.bottom-list-top a{
+	color: #F09E4C;
+}
+/*大标题下面的内容部分*/
+.content a{
+	display: inline-block;
+	width: 428px;
+	height: 30px;
+	text-align: left;
+	line-height: 31px;
+	max-width: 272px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*background-color: red;*/
+	margin-left: 63px;
+}
+/*热门*/
+
+.glory-show-middle-nav>a:hover{
+	border-bottom: 2px solid #F3C258;
+}
+.bbb{
+	width: 50px;
+	height: 60px;
+	
+}
+.hot-list{
+	display: none;
+}
+.bbb:hover .hot-list{
+	display: block;
+}
+.bbb:hover~.thight-box .thight-list{
+	display: none;
+}
+.bbb:hover~.thight-box .events{
+	border: none;
+}
+/*新闻*/
+.new{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+.new-list{
+	position: absolute;
+	/*background-color: red;*/
+	top: 60px;
+	left:0px;
+	display: none;
+}
+
+.new-list{
+	display: none;
+}
+.new-box:hover .new-list{
+	display: block;
+}
+.new-box:hover~.thight-box .thight-list{
+	display: none;
+}
+.new-box:hover~.thight-box .events{
+	border: none;
+}
+/*公告部分*/
+.announcement{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	/*border: 1px solid red;*/
+}
+.announcement-list{
+	position: absolute;
+	/*background-color: red;*/
+	top: 60px;
+	left:0px;
+	display: none;
+}
+.announcement-list{
+	display: none;
+}
+.announcement-box:hover .announcement-list{
+	display: block;
+}
+.announcement-box:hover~.thight-box .thight-list{
+	display: none;
+}
+.announcement-box:hover~.thight-box .events{
+	border: none;
+}
+/*活动部分*/
+.avtivity{
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 0px;
+	left: 150px;
+}
+.avtivity-list{
+	position: absolute;
+	/*background-color: red;*/
+	top: 60px;
+	left:0px;
+}
+.avtivity-list{
+	display: none;
+}
+.avtivity-box:hover .avtivity-list{
+	display: block;
+}
+.avtivity-box:hover+.thight-box .thight-list{
+	display: none;
+}
+.avtivity-box:hover+.thight-box .events{
+	border: none;
+}
+/*赛事部分*/
+.thight{
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 0px;
+	left: 200px;
+}
+.events{
+	border-bottom: 2px solid gold;
+}
+.thight-list{
+	position: absolute;
+	/*background-color: red;*/
+	top: 60px;
+	left:0px
+}
+.thight-list{
+	/*display: none;*/
+}
+.thight-box:hover .thight-list{
+	display: block;
+}
+
+/*更多部分...*/
+.more{
+	display: inline-block;
+	width: 136px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	box-sizing: border-box;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top: 0px;
+	left: 250px;
+}
+
+
+/*王者展示右边部分*/
+.glory-show-right{
+	width: 234px;
+	height: 347px;
+	/*border: 1px solid red;*/
+	padding: 3px 1px;
+}
+/*下载游戏部分*/
+.picture-box a{
+	display: inline-block;
+	width: 234px;
+	/*border: 1px solid red;*/
+}
+.right-img{
+	width: 234px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+}
+.download{
+	height: 128px;
+	background-position: 1px 380px;
+}
+.direnjie{
+	height: 107px;
+	background-position: 1px 249px;
+}
+.experience{
+	height: 106px;
+	background-position: 1px 139px;
+}
+/*二维码部分*/
+.qr{
+	width: 115px;
+	height: 202px;
+	border: 1px solid red;
+	position: fixed;
+	top: 230px;
+	right: 50px;
+	box-sizing: border-box;
+	/*display: none;*/
+}
+.qr-img{
+	width: 115px;
+	height: 114px;
+	border: 2px solid gold;
+	margin-top: 1px;
+	box-sizing: border-box;
+}
+.weibo{
+	width: 115px;
+	height: 41px;
+	background-color: rgba(0,0,0,0.5);
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	margin-top: 2px;
+}
+.weixin{
+	width: 115px;
+	height: 41px;
+	/*border: 1px solid blue;*/
+	background-color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	margin-top: 2px;
+}
+.weibo-img{
+	display: inline-block;
+	width: 115px;
+	height: 41px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_all.png");
+	background-position: -365px -119px;
+}
+.weixin-img{
+	display: inline-block;
+	width: 115px;
+	height: 41px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_all.png");
+	background-position: -365px -159px;
+}
+
+.public-number{
+	width: 114px;
+	height: 150px;
+	border: 1px solid gold;
+	position: absolute;
+	top: 95px;
+	left: -116px;
+	display: none;
+}
+.public-number-img{
+	margin: 6px 6px 0px 6px;
+}
+.public-number-box span{
+	font-size: 12px;
+	color: red;
+	padding: 0 0 0 1px;
+}
+.weibo:hover{
+	background-color: #EFCE5A;
+}
+.weixin:hover{
+	background-color: #EFCE5A;
+}
+.weixin:hover+.public-number{
+	display: block;
+}
+
+/*图片展示区*/
+.picture-box{
+	width: 1208px;
+	height: 180px;
+	/*background-color: red;*/
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.picture-box .picture-1{
+	display: block;
+	width: 292px;
+	height: 135px;
+	overflow: hidden;
+}
+.picture{
+	width: 292px;
+	height: 135px;
+	/*background-color: blue;*/	
+}
+.picture-1:hover .picture{
+	transform: scale(1.2,1.2);
+	transition: 1s;
+}
+
+
+/*内容中心部分*/
+.content-center{
+	width: 1263px;
+	height: 470px;
+	/*border: 1px solid red;*/
+	margin-left: 155px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.content-center-left{
+	width: 880px;
+	height: 470px;
+	/*border: 1px solid red;*/
+}
+/*拼图和内容中心*/
+.content-center-left-top{
+	width: 880px;
+	height: 26px;
+	/*border: 1px solid blue;*/
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.content-center-left-top-img{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: 0px -106px;
+}
+.content-center-left-top h3{
+	display: inline-block;
+}
+.content-center-left-top-more{
+	display: flex;
+	width: 50px;
+	height: 20px;
+	/*border: 1px solid chartreuse;*/
+	position: relative;
+	left: 725px;
+	top: 0px;
+}
+.content-center-left-top-more-img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -249px 3px;
+}
+.content-center-left-top-more-text{
+	display: inline-block;
+	font-size: 12px;
+	margin-top: 2px;
+	color: #99B5D7;
+}
+.content-center-left-top-more:hover .content-center-left-top-more-text{
+	color: gold;
+}
+
+/*内容中心下面的内容*/
+.content-center-left-nav1{
+	width: 880px;
+	height: 30px;
+	/*border: 1px solid red;*/
+}
+.content-center-left-nav1>a{
+	display: inline-block;
+	width: 290px;
+	height: 30px;
+	background-color: #f5f5f5;
+	text-align: center;
+	line-height:30 px;
+}
+.bian{
+	border-bottom: 2px solid gold;
+}
+.content-center-left-bottom{
+	width: 880px;
+	height: 392px;
+	/*border: 1px solid red;*/
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.libai{
+	width: 210px;
+	height: 185px;
+	/*border: 1px solid red;*/
+}
+.libai-img{
+	width: 210px;
+	height: 125px;
+}
+.libai-tetx{
+	width: 210px;
+	height: 65px;
+	/*border: 1px solid blue;*/
+}
+
+
+
+/*英雄皮肤部分*/
+.heroic-skin{
+	width: 296px;
+	height: 470px;
+	/*border: 1px solid black;*/
+}
+/*鬼脸和英雄皮肤*/
+.heroic-skin-top{
+	width: 296px;
+	height: 26px;
+	/*border: 1px solid brown;*/
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+.heroic-skin-top-img{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: 0px -143px;
+}
+.heroic-skin-top h3{
+	display: inline-block;
+}
+.heroic-skin-more{
+	display: flex;
+	width: 50px;
+	height: 20px;
+	/*border: 1px solid chartreuse;*/
+	position: relative;
+	left: 135px;
+	top: 0px;
+}
+/*鬼脸英雄下面的内容*/
+/*新英雄*/
+.new-heroic-box{
+	width: 95px;
+	height: 35px;
+	background-color: #F5F5F5;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+	display: inline-block;
+}
+.new-heroic{
+	width: 98px;
+	height: 30px;
+}
+.new-heroic-img{
+	width: 296px;
+	height: 210px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	display: none;
+}
+.new-heroic-text span{
+	font-size: 14px;
+	color: #C4A699;
+}
+.new-heroic-text{
+	width: 296px;
+	height: 50px;
+	/*border: 1px solid red;*/
+	margin-top: -7px;
+}
+
+.heroic-display{
+	width: 296px;
+	height: 185px;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 210px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heroic-display>img{
+	width: 68px;
+	height: 173px;
+}
+.new-heroic-box:hover .new-heroic-img{
+	display: block;
+}
+.new-heroic-box:hover~.week-heroic-box .week-heroic-img{
+	display: none;
+}
+/*新皮肤*/
+.new-skin-img{
+	width: 296px;
+	height: 210px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 35px;
+	left: -100px;
+	display: none;
+}
+.new-skin-text{
+	width: 296px;
+	height: 50px;
+	margin-top: -7px;
+	/*border: 1px solid red;*/
+}
+.new-skin-text>span{
+	font-size: 14px;
+	color: #C4A699;
+}
+.skin-display{
+	width: 296px;
+	height: 185px;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 210px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.skin-display>img{
+	width: 68px;
+	height: 173px;
+}
+.new-skin-a:hover .new-skin-img{
+	display: block;
+}
+.new-skin-a:hover+.week-heroic-box .week-heroic-img{
+	display: none;
+}
+/*周免英雄*/
+.week-heroic-img{
+	width: 296px;
+	height: 375px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 35px;
+	left: -200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	/*display: none;*/
+}
+.week-heroic-img>img{
+	width: 68px;
+	height: 173px;
+}
+.img1:hover{
+	background-color: black;
+	z-index: 2;
+}
+.week-time{
+	width: 296px;
+	height: 30px;
+	/*border: 1px solid brown;*/
+	margin-top: 10px;
+}
+.week-time-img{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background-image: url("//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -249px -35px;
+}
+.week-time i{
+	font-size: 12px;
+	color: #9999B3;
+}
+/*赛事中心*/
+.competition-center{
+	width: 1263px;
+	height: 780px;
+	/*border: 1px solid red;*/
+	margin-left: 154px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+/*赛事中心左边部分*/
+.competition-center-left{
+	width: 880px;
+	height: 780px;
+	/*border: 1px solid red;*/
+}
+.competition-center-left-top{
+	width: 880px;
+	height: 30px;
+	/*border: 1px solid blue;*/
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.competition-center-left-img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: 0px -181px;
+}
+.competition-center-left-top>h3{
+	display: inline-block;
+}
+.competition-center-content{
+	width: 880px;
+	height: 737px;
+	/*border: 1px solid gold;*/
+}
+.competition-center-content-kcc{
+	width: 125px;
+	height: 40px;
+	background-color: #F5F5F5;
+	display: inline-block;
+}
+.kcc-content{
+	display: none;
+}
+.competition-center-content-kcc:hover~.competition-center-content-kpl .kpl-content{
+	display: none;
+}
+.competition-center-content-kcc:hover .kcc-content{
+	display: block;
+}
+.kcc-lcon{
+	width: 880px;
+	height: 275px;
+	/*border: 1px solid red;*/
+	margin-top: 15px;
+	position: relative;
+}
+.lcon{
+	width: 260px;
+	height: 260px;
+}
+.lcon-right-text{
+	display: inline-block;
+	width: 620px;
+	height: 260px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 0px;
+	left: 260px;
+}
+.lcon-right-text-top{
+	width: 620px;
+	height: 50px;
+	/*border: 1px solid gold;*/
+}
+.lcon-right-text-top>h3{
+	display: block;
+	overflow: hidden;
+	max-width: 620px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lcon-right-text-top>a{
+	display: block;
+	overflow: hidden;
+	max-width: 620px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lcon-right-text-top h3:hover{
+	text-decoration: underline;
+}
+.lcon-right-text-bottom{
+	width: 620px;
+	height: 210px;
+	/*border: 1px solid salmon;*/
+}
+.lcon-right-text-bottom>ul>li{
+	width: 620px;
+	height: 35px;
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.kcc{
+	display: inline-block;
+	width: 60px;
+	height: 25px;
+	background-color: #f5f5f5;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 10px;
+}
+.rw{
+	display: inline-block;
+}
+.lcon-right-text-bottom a{
+	color: black;
+}
+.lcon-right-text-bottom a:hover{
+		text-decoration: underline;
+}
+.live{
+	width: 880px;
+	height: 427px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+.live-img{
+	width: 215px;
+	height: 210px;
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+}
+/*KPL职业联赛*/
+.competition-center-content-kpl{
+	width: 125px;
+	height: 40px;
+	background-color: #F5F5F5;
+	display: inline-block;
+	position: absolute;
+	margin-left: 2px;
+}
+
+.kpl-content{
+	width: 880px;
+	height: 700px;
+	/*border: 1px solid brown;*/
+	position: absolute;
+	top: 40px;
+	left: -130px;
+}
+.kpl-content{
+	/*display: none;*/
+}
+.kpl-top{
+	width: 880px;
+	height: 260px;
+	/*border: 1px solid salmon;*/
+	position: relative;
+	left: 3px;
+}
+.kpl-img{
+	width: 212px;
+	height: 260px;
+	display: inline-block;
+}
+.kpl-top-text{
+	display: inline-block;
+	width: 661px;
+	height: 260px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 0px;
+	left: 216px;
+}
+.kpl-top-text-top{
+	width: 661px;
+	height: 50px;
+	/*border: 1px solid red;*/
+}
+.kpl-top-text-bottom>ul>li{
+	width: 661px;
+	height: 35px;
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.live1{
+	width: 880px;
+	height: 427px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	left: 3px;
+}
+.kpl-top-text-bottom>ul>li>a{
+	color: black;
+}
+.kpl-top-text-top h3:hover{
+	text-decoration: underline;
+}
+.kpl-top-text-bottom a:hover{
+	text-decoration: underline;
+}
+/*赛事中心右边部分*/
+.competition-center-right{
+	width: 300px;
+	height: 780px;
+	/*border: 1px solid red;*/
+}
+.competition-center-right-top{
+	width: 300px;
+	height: 30px;
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	vertical-align: middle;
+	
+}
+.competition-center-right-img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -155px -105px;
+	margin-bottom: 1px;
+}
+.competition-center-right-top h3{
+	display: inline-block;
+}
+.goupiao{
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	/*border: 1px solid gold;*/
+	display: flex;
+	align-items: center;
+}
+.gengduo{
+	display: flex;
+	align-items: center;
+}
+.competition-center-right-img1{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png");
+	background-position: -249px -87px;
+	vertical-align: middle;
+}
+.competition-center-right-top>a>span{
+	font-size: 12px;
+}
+.competition-center-right-nav{
+	width: 300px;
+	height: 40px;
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+}
+.competition-center-right-nav>div{
+	width: 70px;
+	height: 40px;
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 40px;
+}
+.competition-center-right-form{
+	width: 300px;
+	height: 60px;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+}
+.competition-center-right-form>div{
+	width: 70px;
+	height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 60px;
+}
+.es{
+	display: flex;
+	flex-flow: column;
+	/*justify-content: center;*/
+	align-items: center;
+}
+.es div:nth-child(1){
+	width: 30px;
+	height: 30px;
+}
+.es div:nth-child(2){
+	width: 50px;
+	height: 10px;
+	margin-top: -15px;
+}
+.bottom-img{
+	width: 300px;
+	margin-left: 3px;
+}
+/*底部*/
+.tail{
+	width: 1263px;
+	height: 300px;
+	/*border: 1px solid red;*/
+	margin-left: 154px;
+	margin-top: 70px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201605/top_banner/bg_footer.jpg");
+}
+.tail a{
+	color: #666666;
+}
+.tail-top{
+	width: 1263px;
+	height: 80px;
+	border-bottom: 2px solid #D4D4D4;
+}
+.bottom-logo{
+	width: 350px;
+	height: 60px;
+	background-image: url("http://game.gtimg.cn/images/yxzj/web201605/main/spr.png");
+	background-position: 0px -4px;
+	
+}
+.tail-bottom{
+	width: 1263px;
+	height: 206px;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.tail-left{
+	width: 650px;
+	height: 206px;
+	/*border: 1px solid red;*/
+}
+
+.tail-left p{
+	font-size: 12px;
+}
+.tail-text{
+	width: 650px;
+	height: 40px;
+	
+}
+.tail-text span{
+	display: inline-block;
+	width: 104px;
+	height: 17px;
+	font-size: 12px;
+}
+.tail-left>span{
+	display: inline-block;
+	width: 650px;
+	height: 40px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.tail-right{
+	width: 600px;
+	height: 191px;
+	/*border: 1px solid red;*/
+	margin-top: 15px;
+}
+.tail-right-tetx>a{
+	font-size: 8px;
+	padding: 0px 2px;
+}
+.copyright{
+	width: 600px;
+	height: 20px;
+	/*border: 1px solid saddlebrown;*/
+	position: relative;
+}
+
+.copyright>a{
+	font-size: 12px;
+	
+}
+.wq{
+	padding-left: 133px;
+}
+.bianhao{
+	width: 600px;
+	height: 20px;
+}
+.bianhao>a{
+	font-size: 12px;
+	
+}
+.jubao{
+	font-size: 12px;
+}
